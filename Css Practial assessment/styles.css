@@ -1,0 +1,102 @@
+/* Backgrounds */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.background-test {
+    background-image: url('background-image.jpg'); /* Add your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+/* Borders */
+.border-test {
+    border: 5px solid #000000;
+    border-radius: 15px;
+}
+
+main {
+    border: 3px dashed #000000;
+}
+
+/* Margins and Padding */
+.box-model-test {
+    padding: 20px;
+    margin: 30px auto;
+    height: 200px;
+    width: 400px;
+}
+
+/* Text and Fonts */
+.text-test {
+    font-family: Arial, sans-serif;
+}
+
+.text-test p {
+    font-size: 18px;
+}
+
+header h1 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer p {
+    color: grey;
+}
+
+/* Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+.icon-test::before {
+    content: "\f005"; /* Font Awesome star icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ffcc00;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Links */
+a {
+    color: blue;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Lists */
+.list-test ul {
+    list-style-type: square;
+    margin: 10px 0;
+}
+
+.list-test li {
+    margin-bottom: 10px;
+}
+
+/* Tables */
+.table-test table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-test th, .table-test td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-test tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-test th {
+    text-align: center;
+}

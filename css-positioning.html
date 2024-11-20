@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Positioning</title>
+    <style>
+        div.container {
+            width: 300px;
+            height: 200px;
+            background-color: purple;
+            position: relative;
+        }
+
+        div.head {
+            width: 200px;
+            height: 150px;
+            background-color: indigo;
+            position: absolute;
+            right: -200px;
+            bottom: 0px;
+        }
+
+        div.window {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            left: 50px;
+            top: 25px;
+        }
+
+        div.circle-1,
+        div.circle-2 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        div.circle-1 {
+            bottom: -40px;
+            left: 20px;
+        }
+        div.circle-2 {
+            bottom: -40px;
+            left: 150px;
+        }
+
+        div.inner-circle {
+            position: absolute;
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            left: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="window"></div>
+        </div>
+        <div class="circle-1">
+            <div class="inner-circle"></div>
+        </div>
+        <div class="circle-2">
+            <div class="inner-circle"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

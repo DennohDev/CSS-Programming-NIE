@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Combinators</title>
+    <style>
+        .p1 + p {
+            color: green;
+        }
+        body > p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<!-- descendant selector -->
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique ut ratione maxime modi inventore autem blanditiis fuga eius ea labore, asperiores provident recusandae earum tempora fugiat laudantium beatae alias.</p>
+        <div class="inner-div">
+            <p class="p1">Hello World</p>
+            <p class="p2">World hello</p>
+            <p class="p3">Hello hello</p>
+        </div>
+    </div>
+    <!-- child selector -->
+    <p>Will not be affected</p>
+</body>
+</html>
